@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  postgres_host:
+    image: postgres:12
+    ports:
+      - "5433:5432"
+    environment:
+      POSTGRES_DB: pgrs_db
+      POSTGRES_USER: pgrs_user
+      POSTGRES_PASSWORD: pgrs_pass
